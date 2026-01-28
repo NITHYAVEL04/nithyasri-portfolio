@@ -3,78 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nithya Sri P | Software Developer Portfolio</title>
+    <title>Nithya Sri P | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="hero">
-        <img src="Mypicture.jpeg" alt="Nithya Sri P" class="profile-img">
-        <h1>NITHYA SRI P</h1>
-        <p class="pronouns">She/Her</p>
-        <p class="tagline">EX - TCS (British Airways Project) | Software Developer | Python, Java, SQL | Passionate about AI & Web Development | Deloitte Data Analytics & AWS Solutions Architecture Job Simulation Participant with Forage</p>
-        
-        <div class="social-links">
-            <a href="https://linkedin.com/in/nithya-sri-p-427440213" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/NITHYAVEL04" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.hackerrank.com/profile/Sweetyblissnith1" target="_blank"><i class="fab fa-hackerrank"></i></a>
-        </div>
-
-        <div class="cta">
-            <a href="NITHYA_SRI_PALANIVEL_Software Developer.pdf" download class="btn">Download Resume</a>
+        <div class="glass-hero">
+            <img src="Mypicture.jpeg" alt="Nithya Sri P" class="profile-img">
+            <h1>NITHYA SRI P</h1>
+            <p class="pronouns">She/Her</p>
+            <p class="tagline">EX - TCS (British Airways Project) | Software Developer | Python, Java, SQL | Passionate about AI & Web Development | Deloitte Data Analytics & AWS Solutions Architecture Job Simulation Participant with Forage</p>
+            <div class="cta-group">
+                <a href="NITHYA_SRI_PALANIVEL_Software Developer.docx" download class="btn">Download Resume</a>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/nithya-sri-p-427440213" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/NITHYAVEL04" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="container">
-        <h2>Professional Experience</h2>
-        <div class="card">
-            <h3>Associate System Engineer | Tata Consultancy Services (TCS)</h3>
-            <p class="date">Sep 2024 – Dec 2025</p>
-            <p>Participated in enhancement-based development, contributing to design, implementation, and testing of internal application components.</p>
-        </div>
-    </section>
-    <section class="container">
-    <h2>Dynamic Projects</h2>
-    <div id="project-list" class="grid">
-        <p>Loading projects...</p>
-    </div>
-    </section>
-    <section class="container grey-bg">
-        <h2>Certifications & Simulations</h2>
-        <p class="instruction">Click a card to view the certificate</p>
-        <div class="grid">
-            <div class="card cert-card" onclick="openModal('pega-cert.jpg')">
-                <h3>PEGA Senior System Architect</h3>
-                <p>Global certification for enterprise-level workflow automation.</p>
+    <main class="container">
+        <section class="projects-section">
+            <h2 class="elegant-heading">Live Projects</h2>
+            <div id="project-list" class="elegant-grid">
+                <p>Loading innovative projects...</p>
             </div>
-            <div class="card cert-card" onclick="openModal('vista-ai-cert.jpg')">
-                <h3>Vista Equity Partners - AI in Action Job Simulation</h3>
-                <p>Prompt engineering and GenAI workflow automation.</p>
-            </div>
-            <div class="card cert-card" onclick="openModal('jpmorgan-cert.jpg')">
-                <h3>JPMorganChase Software Engineering</h3>
-                <p>Built Spring Boot microservices with Kafka and JPA.</p>
-            </div>
-            <div class="card cert-card" onclick="openModal('aws-cert.jpg')">
-                <h3>AWS Solutions Architecture</h3>
-                <p>Designed scalable Elastic Beanstalk architecture.</p>
-            </div>
-            <div class="card cert-card" onclick="openModal('deloitte-cert.jpg')">
-                <h3>Deloitte Data Analytics</h3>
-                <p>Completed data analyticsjob simulation.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container">
-        <h2>Get In Touch</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Full Name" required>
-            <input type="tel" id="phone" placeholder="Contact Number" required>
-            <textarea id="reason" placeholder="Information/Reason for connecting..." required></textarea>
-            <button type="submit" class="btn">Send Email</button>
-        </form>
-    </section>
+        <section class="experience-section">
+            <h2 class="elegant-heading">Work Experience</h2>
+            <div class="glass-card">
+                <h3>Associate System Engineer | TCS</h3>
+                <p class="date">Sep 2024 – Dec 2025</p>
+                <p>Enhancement-based development, application diagnostics, and contributing to high-impact projects.</p>
+            </div>
+        </section>
+
+        <section class="cert-section">
+            <h2 class="elegant-heading">Certifications</h2>
+            <div class="elegant-grid">
+                <div class="glass-card clickable" onclick="openModal('pega-cert.jpg')">
+                    <h3>PEGA Senior Architect</h3>
+                    <p>Click to view credential.</p>
+                </div>
+                <div class="glass-card clickable" onclick="openModal('aws-cert.jpg')">
+                    <h3>AWS Solutions Architect</h3>
+                    <p>Forage Job Simulation.</p>
+                </div>
+                <div class="glass-card clickable" onclick="openModal('deloitte-cert.jpg')">
+                    <h3>Deloitte Data Analytics</h3>
+                    <p>Data Engineering & AI.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="elegant-heading">Get In Touch</h2>
+            <form id="contact-form" class="glass-card">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <textarea id="reason" placeholder="Message/Reason for connection" required></textarea>
+                <button type="submit" class="btn">Send Inquiry</button>
+            </form>
+        </section>
+    </main>
 
     <div id="certModal" class="modal" onclick="closeModal()">
         <span class="close">&times;</span>
