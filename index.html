@@ -5,37 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nithya Sri P | Software Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <img src="Mypicture.jpeg" alt="Nithya Sri P" class="profile-img">
-        <h1>Nithya Sri P</h1>
-        <p>Associate System Engineer | Software Developer</p>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/nithya-sri-p-427440213">LinkedIn</a>
-            <a href="https://www.hackerrank.com/profile/Sweetyblissnith1">HackerRank</a>
+        <h1>NITHYA SRI P</h1>
+        <p class="pronouns">She/Her</p>
+        <p class="tagline">EX - TCS (British Airways Project) | Software Developer | Python, Java, SQL | Passionate about AI & Web Development | Deloitte Data Analytics & AWS Solutions Architecture Job Simulation Participant with Forage</p>
+        
+        <div class="social-links">
+            <a href="https://linkedin.com/in/nithya-sri-p-427440213" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/NITHYAVEL04" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.hackerrank.com/profile/Sweetyblissnith1" target="_blank"><i class="fab fa-hackerrank"></i></a>
+        </div>
+
+        <div class="cta">
+            <a href="NITHYA_SRI_PALANIVEL_Software Developer.docx" download class="btn">Download Resume</a>
         </div>
     </header>
 
-    <section id="about">
-        <h2>Professional Summary</h2>
-        <p>Detail-oriented Software Developer with experience in application diagnostics, debugging, and enterprise-level system enhancement.</p>
+    <section class="container">
+        <h2>Professional Experience</h2>
+        <div class="card">
+            <h3>Associate System Engineer | Tata Consultancy Services (TCS)</h3>
+            <p class="date">Sep 2024 – Dec 2025</p>
+            <p>Participated in enhancement-based development, contributing to design, implementation, and testing of internal application components[cite: 20, 21].</p>
+        </div>
     </section>
-
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> Java, Python</li>
-            <li><strong>Tools:</strong> PEGA, Azure, Power Platform, SDLC</li>
-            <li><strong>Databases:</strong> MySQL</li>
-        </ul>
+    <section class="container">
+    <h2>Dynamic Projects</h2>
+    <div id="project-list" class="grid">
+        <p>Loading projects...</p>
+    </div>
     </section>
-
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div id="project-list">
+    <section class="container grey-bg">
+        <h2>Certifications & Simulations</h2>
+        <p class="instruction">Click a card to view the certificate</p>
+        <div class="grid">
+            <div class="card cert-card" onclick="openModal('pega-cert.jpg')">
+                <h3>PEGA Senior System Architect</h3>
+                <p>Global certification for enterprise-level workflow automation.</p>
             </div>
+            <div class="card cert-card" onclick="openModal('jpmorgan-cert.jpg')">
+                <h3>JPMorganChase Software Engineering</h3>
+                <p>Built Spring Boot microservices with Kafka and JPA.</p>
+            </div>
+            <div class="card cert-card" onclick="openModal('aws-cert.jpg')">
+                <h3>AWS Solutions Architecture</h3>
+                <p>Designed scalable Elastic Beanstalk architecture.</p>
+            </div>
+            <div class="card cert-card" onclick="openModal('deloitte-cert.jpg')">
+                <h3>Deloitte Data Analytics</h3>
+                <p>Completed data analytics and GenAI workflow job simulation[cite: 1, 32].</p>
+            </div>
+        </div>
     </section>
+
+    <section class="container">
+        <h2>Get In Touch</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="tel" id="phone" placeholder="Contact Number" required>
+            <textarea id="reason" placeholder="Information/Reason for connecting..." required></textarea>
+            <button type="submit" class="btn">Send Email</button>
+        </form>
+    </section>
+
+    <div id="certModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
     <script src="app.js"></script>
 </body>
